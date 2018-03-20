@@ -1,0 +1,51 @@
+<head>
+	<title>Arkanoid</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: grey;
+			text-align: center;
+		}
+		#akhadoid {
+			position: relative;
+			width: 640px;
+			height: 480px;
+			margin: 0 auto;
+			margin-top: 60px;
+			border: 4px solid black;
+			background-color: '#744242';
+		}
+		canvas {
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	</style>
+</head>
+<body>
+	<div id="akhadoid">
+	
+	</div>
+	(ruch paletką: [A] i [D] lub [lewo] [prawo], wystrzelenie piłki: [spacja] lub myszka)
+	<!-- WCZYTANIE BIBLIOTEK -->
+	<script src="js/polyfills.js"></script>
+	<script src="js/t.js"></script>
+	<script src="js/dat.gui.js"></script>
+	<script src="js/fpsmeter.js"></script>
+	<!-- RÓŻNE HELPERY, KLASY -->
+	<script src="js/setup.js"></script>
+	<script src="js/input.js"></script>
+	<script src="js/helpers.js"></script>
+	<script src="js/vec.js"></script>
+	<script src="js/paddle.js"></script>
+	<script src="js/ball.js"></script>
+	<script src="js/block.js"></script>
+	<script src="js/level.js"></script>
+	<!-- WCZYTANIE POZIOMÓW -->
+	<script src="levels/level_1.js"></script>
+	<!-- GŁÓWNY PLIK GRY -->
+	<script src="js/game.js"></script>
+</body>
+</html>
